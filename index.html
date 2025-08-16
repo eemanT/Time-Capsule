@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Time Capsule ✨</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>✨ Your Secret Time Vault ✨</h1>
+</header>
+
+<main>
+  <div class="container">
+    <div class="left-column">
+      <section id="createCapsule">
+        <h2>Create a Capsule</h2>
+        <form id="capsuleForm">
+          <input type="text" id="message" placeholder="Write your message here" required>
+          <input type="date" id="unlockDate" required>
+          <button type="submit"> Save Capsule </button>
+        </form>
+      </section>
+
+      <section id="capsuleDisplaySection">
+        <h2>Saved Capsules</h2>
+        <div id="capsuleDisplay"></div>
+      </section>
+    </div>
+
+    <div class="right-column">
+      <section id="about">
+        <h2>About Me 🌟</h2>
+        <p>Hi! I’m <strong>Eeman Tariq</strong>, a web developer who loves bringing creativity and fun to every project. </p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me 📬</h2>
+        <p>You can email me directly at <a href="mailto:eemantariq74@gmail.com">eemantariq74@gmail.com</a></p>
+      </section>
+    </div>
+  </div>
+</main>
+
+<div class="unlock-key">🗝️</div>
+<div id="funMessage"></div>
+
+<!-- First confirmation modal -->
+<div id="confirmModal" class="modal">
+  <div class="modal-content">
+    <p>Are you sure?</p>
+    <div class="modal-buttons">
+      <button id="confirmYes">Yes</button>
+      <button id="confirmNo">No</button>
+    </div>
+  </div>
+</div>
+
+<!-- Second confirmation modal -->
+<div id="reallySureModal" class="modal big-modal">
+  <div class="modal-content">
+    <p>ARE YOU REALLY REALLY SURE?</p>
+    <div class="modal-buttons">
+      <button id="reallyYes">YESSS</button>
+      <button id="reallyNo">No</button>
+    </div>
+  </div>
+</div>
+
+<!-- Past date warning modal -->
+<div id="pastModal" class="modal">
+  <div class="modal-content">
+    <p>OMGG, ITS THE PASTTT </p>
+    <button id="pastOk">OK</button>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Eeman Tariq | Made with ❤️</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
